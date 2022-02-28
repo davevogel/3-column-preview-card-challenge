@@ -1,0 +1,139 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Background */
+body {
+    font-size: 1.6rem;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca';
+}
+
+/* Cards */
+.hero {
+    margin: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin: 2rem 5rem;
+}
+
+.box-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.box-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 20px;
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-1:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0.8rem 2.5rem;
+}
+
+.btn-2:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0.8rem 2.5rem;
+}
+
+.btn-3:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0.8rem 2.5rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    text-align: left;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 2rem 0rem;
+}
+
+img {
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .hero {
+        flex-direction: row;
+        max-width: 1200px;
+        /* height: 50vh; */
+    }
+
+    .box-1 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        max-width: 330px;
+    }
+
+    .box-2 {
+        max-width: 330px;
+    }
+    
+    .box-3 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        max-width: 330px;
+    }
+}
